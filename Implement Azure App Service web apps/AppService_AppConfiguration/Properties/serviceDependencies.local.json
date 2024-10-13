@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "secrets1": {
+      "secretStore": null,
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.KeyVault/vaults/az204keyvaulttest1",
+      "type": "secrets.keyVault",
+      "connectionId": "keyVaultUri"
+    },
+    "secrets2": {
+      "type": "secrets.user"
+    },
+    "appConfig1": {
+      "serviceConnectorResourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ServiceLinker/locations/westus/connectors/AppConfig_6F28F1C716",
+      "secretStore": "LocalSecretsFile",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.AppConfiguration/configurationStores/az204appconfigs",
+      "type": "appConfig.azure",
+      "connectionId": "AppConfig"
+    }
+  }
+}
